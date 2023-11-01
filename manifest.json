@@ -1,6 +1,20 @@
 {
-    "manifest_version": 3,
+    "manifest_version": 2,
     "name": "JSxec",
     "version": "1.0",
-    "description": "Inject Javascript into websites with a lot of features"
+    "author": "Arun Krishnan(aka Winters)",
+    "short_name": "jsexec",
+    "description": "Inject Javascript or CSS to any website",
+    "browser_action":{
+        "default_popup": "inject.html",
+        "default_title": "JSxec"
+    },
+    "background": {
+        "service_worker": "bg.js"
+    },
+    "permissions": [
+        "storage",
+        "tabs",
+        "activeTab"
+    ]
 }
